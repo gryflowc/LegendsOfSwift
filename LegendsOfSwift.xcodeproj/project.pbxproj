@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		1A02D96022C4C05D001E220E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A02D95E22C4C05D001E220E /* Main.storyboard */; };
 		1A02D96222C4C05D001E220E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A02D96122C4C05D001E220E /* Assets.xcassets */; };
 		1A02D96522C4C05D001E220E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A02D96322C4C05D001E220E /* LaunchScreen.storyboard */; };
+		1AAD0A0922C4C8370024E311 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD0A0822C4C8370024E311 /* Fact.swift */; };
 		90765DB62C31F36B6CAB2156 /* Pods_LegendsOfSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D1F002A77BE0E4585FAA97 /* Pods_LegendsOfSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		1A02D96122C4C05D001E220E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A02D96422C4C05D001E220E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A02D96622C4C05D001E220E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAD0A0822C4C8370024E311 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
 		4F2FAF19CCC1A1CBA7C1114B /* Pods-LegendsOfSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegendsOfSwift.debug.xcconfig"; path = "Target Support Files/Pods-LegendsOfSwift/Pods-LegendsOfSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		C986BDD64FC62268636F0AFA /* Pods-LegendsOfSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegendsOfSwift.release.xcconfig"; path = "Target Support Files/Pods-LegendsOfSwift/Pods-LegendsOfSwift.release.xcconfig"; sourceTree = "<group>"; };
 		F0D1F002A77BE0E4585FAA97 /* Pods_LegendsOfSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegendsOfSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				1A02D95A22C4C05D001E220E /* AppDelegate.swift */,
+				1AAD0A0822C4C8370024E311 /* Fact.swift */,
 				1A02D95C22C4C05D001E220E /* ViewController.swift */,
 				1A02D95E22C4C05D001E220E /* Main.storyboard */,
 				1A02D96122C4C05D001E220E /* Assets.xcassets */,
@@ -77,7 +80,6 @@
 				4F2FAF19CCC1A1CBA7C1114B /* Pods-LegendsOfSwift.debug.xcconfig */,
 				C986BDD64FC62268636F0AFA /* Pods-LegendsOfSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -205,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A02D95D22C4C05D001E220E /* ViewController.swift in Sources */,
+				1AAD0A0922C4C8370024E311 /* Fact.swift in Sources */,
 				1A02D95B22C4C05D001E220E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

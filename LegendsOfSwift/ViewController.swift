@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -16,9 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var getFactButton: UIButton!
     @IBOutlet weak var outputLabel: UILabel!
     
-    
-    
-    
+    var fact = Fact()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +28,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func getFactPressed(_ sender: UIButton) {
+        fact.getQuote {
+            self.outputLabel.text = "\(self.fact.quote)"
+        }
     }
-    
-    
     
     
     
