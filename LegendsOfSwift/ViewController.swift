@@ -10,11 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var firstNameField: UITextField!
+    @IBOutlet weak var lastNameField: UITextField!
+    @IBOutlet weak var genderSegmentControl: UISegmentedControl!
+    @IBOutlet weak var getFactButton: UIButton!
+    @IBOutlet weak var outputLabel: UILabel!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        firstNameField.placeholder = "Chuck"
+        lastNameField.placeholder = "Norris"
+
     }
 
+    @IBAction func getFactPressed(_ sender: UIButton) {
+    }
+    
+    
+    
+    
+    
 
 }
 

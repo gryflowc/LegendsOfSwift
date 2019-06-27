@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,102 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LegendsOfSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legends of Swift!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPV-L1-Sws">
+                                <rect key="frame" x="16" y="74" width="382" height="38.5"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="33"/>
+                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPS-co-zkY">
+                                <rect key="frame" x="16" y="162.5" width="382" height="28"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84w-wH-d2d">
+                                <rect key="frame" x="16" y="249.5" width="382" height="28"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kXQ-6v-p7c">
+                                <rect key="frame" x="16" y="198.5" width="382" height="31"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1A-wB-rcM">
+                                <rect key="frame" x="16" y="285.5" width="382" height="31"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HBP-wD-Ga7">
+                                <rect key="frame" x="30" y="341.5" width="354" height="29"/>
+                                <segments>
+                                    <segment title="Male"/>
+                                    <segment title="Female"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDe-uv-T9X">
+                                <rect key="frame" x="140" y="379.5" width="134" height="30"/>
+                                <state key="normal" title="Get a Fact"/>
+                                <connections>
+                                    <action selector="getFactPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kH6-vl-avg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ej-FR-TZ3">
+                                <rect key="frame" x="16" y="424.5" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hPS-co-zkY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5jn-9l-bzw"/>
+                            <constraint firstItem="H1A-wB-rcM" firstAttribute="top" secondItem="84w-wH-d2d" secondAttribute="bottom" constant="8" id="5zM-zv-QcC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hPS-co-zkY" secondAttribute="trailing" constant="16" id="7K6-8c-Gq5"/>
+                            <constraint firstItem="UPV-L1-Sws" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="EJZ-sT-xbS"/>
+                            <constraint firstItem="HBP-wD-Ga7" firstAttribute="top" secondItem="H1A-wB-rcM" secondAttribute="bottom" constant="25" id="G18-ZO-L7p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Ej-FR-TZ3" secondAttribute="trailing" constant="16" id="JFN-bh-ZQa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BDe-uv-T9X" secondAttribute="trailing" constant="140" id="M7r-x2-sHs"/>
+                            <constraint firstItem="HBP-wD-Ga7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Nuh-70-kc6"/>
+                            <constraint firstItem="kXQ-6v-p7c" firstAttribute="top" secondItem="hPS-co-zkY" secondAttribute="bottom" constant="8" id="Tay-4G-OXh"/>
+                            <constraint firstItem="4Ej-FR-TZ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="V6j-lD-Er5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="84w-wH-d2d" secondAttribute="trailing" constant="16" id="W2c-WG-2Rb"/>
+                            <constraint firstItem="kXQ-6v-p7c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YsO-FS-dza"/>
+                            <constraint firstItem="H1A-wB-rcM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Z4b-dC-Adg"/>
+                            <constraint firstItem="BDe-uv-T9X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="aEf-vV-LzD"/>
+                            <constraint firstItem="UPV-L1-Sws" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aeY-sw-w9e"/>
+                            <constraint firstItem="4Ej-FR-TZ3" firstAttribute="top" secondItem="BDe-uv-T9X" secondAttribute="bottom" constant="15" id="bfH-Gp-GZ6"/>
+                            <constraint firstItem="84w-wH-d2d" firstAttribute="top" secondItem="kXQ-6v-p7c" secondAttribute="bottom" constant="20" id="fQw-1a-l9P"/>
+                            <constraint firstItem="BDe-uv-T9X" firstAttribute="top" secondItem="HBP-wD-Ga7" secondAttribute="bottom" constant="10" id="h6o-5i-x11"/>
+                            <constraint firstItem="84w-wH-d2d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="it8-UP-YPu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HBP-wD-Ga7" secondAttribute="trailing" constant="30" id="lD0-EH-NT1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H1A-wB-rcM" secondAttribute="trailing" constant="16" id="lV8-l2-n6j"/>
+                            <constraint firstItem="hPS-co-zkY" firstAttribute="top" secondItem="UPV-L1-Sws" secondAttribute="bottom" constant="50" id="r7D-AX-s6n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kXQ-6v-p7c" secondAttribute="trailing" constant="16" id="usG-HE-ju7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UPV-L1-Sws" secondAttribute="trailing" constant="16" id="yWT-pm-hy9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstNameField" destination="kXQ-6v-p7c" id="MAN-Fm-UqP"/>
+                        <outlet property="genderSegmentControl" destination="HBP-wD-Ga7" id="QuW-UF-dUd"/>
+                        <outlet property="getFactButton" destination="BDe-uv-T9X" id="BBG-Di-Ilr"/>
+                        <outlet property="lastNameField" destination="H1A-wB-rcM" id="yPD-Ls-ewY"/>
+                        <outlet property="outputLabel" destination="4Ej-FR-TZ3" id="hBX-6h-i2f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
         </scene>
     </scenes>
 </document>
